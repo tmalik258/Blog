@@ -8,7 +8,7 @@ from accounts.models import CustomUser
 
 @admin.register(CustomUser)
 class CustomUserAdmin(UserAdmin):
-    add_form_template = CustomUserCreationForm
+    add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model = CustomUser
     list_display = [
